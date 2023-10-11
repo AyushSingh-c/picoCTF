@@ -1,0 +1,4 @@
+file ./flag.txt
+    it is a png file
+
+flag - picoCTF{now_you_know_about_extensions}

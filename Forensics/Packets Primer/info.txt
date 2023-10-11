@@ -1,0 +1,3 @@
+in the first packet TCP follow
+
+flag - picoCTF{p4ck37_5h4rk_01b0a0d6}

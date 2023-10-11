@@ -1,0 +1,3 @@
+https://picoctf2021.haydenhousen.com/forensics/macrohard-weakedge
+
+flag - picoCTF{D1d_u_kn0w_ppts_r_z1p5}

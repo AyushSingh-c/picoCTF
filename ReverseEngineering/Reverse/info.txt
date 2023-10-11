@@ -1,0 +1,5 @@
+We need to put a breakpoint on strcmp(main+176) to see the password
+    picoCTF{3lf_r3v3r5ing_succe55ful_9ae8528
+This will give us the flag
+
+flag: picoCTF{3lf_r3v3r5ing_succe55ful_9ae85289}

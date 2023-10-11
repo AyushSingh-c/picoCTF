@@ -1,0 +1,28 @@
+Intro to Radare2
+
+Analysis of binaries
+    strings ./breadth1.v1
+    strings ./breadth.v2
+        both strings cmd gives us many picoCTF formated strings/flags
+    To understand the difference between both binaries
+        radiff2 ./breadth.v1 ./breadth.v2
+        this shows these changes
+            0x000002d4 cd50612f31e893681973b990ffcbc7d7b8a8f1b4 => 4352e5d74f759ff99c57060c2bc2df2751a7dda9 0x000002d4
+            0x0009504b 54 => 44 0x0009504b
+            0x0009504e b83a8037d04839c27408c30f1f80 => 483d3ec71b04740ac3660f1f8400 0x0009504e
+            0x00253753 31 => 32 0x00253753
+        with radare we can go to these address(0x000002d4, 0x0009504b, 0x0009504e, 0x00253753) to check the difference
+    r2 ./breadth.v2
+        aa
+        s 0x00095040
+        pdb
+    r2 ./breadth.v1
+        aa
+        s 0x00095040
+        pdb
+    we see an instruction before cmp is removed from v1 to v2
+    we are also branching to 0x95060 based on this cmp
+        s 0x0009504b
+        pdb
+
+flag - picoCTF{VnDB2LUf1VFJkdfDJtdYtFlMexPxXS6X}

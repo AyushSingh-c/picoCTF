@@ -1,0 +1,11 @@
+We analyse the pcap file
+    the calls to /flag endpoint is frequent
+    A lot of the DNS queries have a destination of 8.8.8.8. However, a subset have a destination for 18.217.1.57.
+    with filter 
+        dns and ip.dst==18.217.1.57
+    we can find that the calls are made to multiple subdomains of reddshrimpandherring.com
+    we can append these subdomains in sequence of time
+        cGljb0NURntkbnNfM3hmMWxfZnR3X2RlYWRiZWVmfQ==
+        when we base64 decode it we get the flag
+
+flag - picoCTF{dns_3xf1l_ftw_deadbeef}

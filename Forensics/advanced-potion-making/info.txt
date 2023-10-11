@@ -1,0 +1,24 @@
+We download a file
+    to find the file type 
+        file advanced-potion-making
+        we get no info
+    xxd -g 1 ./advanced-potion-making| head
+        we see the IHDR which means it can be PNG file
+    we fix the hex header of the file
+        xxd ./advanced-potion-making > ./advanced-potion-making_hex.png
+        vim ./advanced-potion-making_hex.png
+        xxd -r ./advanced-potion-making_hex.png ./advanced-potion-making_pached.png
+        pngcheck ./advanced-potion-making_pached.png
+            to check if the file is correct
+        patched binary diff
+            before
+                00000000: 89 50 42 11 0d 0a 1a 0a 00 12 13 14 49 48 44 52  .PB.........IHDR
+            after
+                00000000: 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52  .PNG........IHDR
+    we can onpen stegsolver
+        java -jar stegsolve.jar
+            in path ~/Downloads/bin
+        we can go to the red plane 0 
+        we get the flag
+
+flag - picoCTF{w1z4rdry}

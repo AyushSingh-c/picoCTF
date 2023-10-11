@@ -1,0 +1,4 @@
+we have a image file
+    zsteg pico.flag.png
+
+Flag - picoCTF{7h3r3_15_n0_5p00n_a9a181eb}

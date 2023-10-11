@@ -1,0 +1,51 @@
+to understand BMP headers
+    https://medium.com/sysf/bits-to-bitmaps-a-simple-walkthrough-of-bmp-image-format-765dc6857393
+
+We are given a file which we are not able to open 
+    file tunn3l_v1s10n
+        this gives "tunn3l_v1s10n: data" as output 
+    xxd -g 1 tunn3l_v1s10n | head
+        we get the hex dump byte wise of the header to identify the file type which is a BMP image file
+    We changed the extension of the file to .bmp 
+        the file is still not opened correctly
+        maybe the file is corrupted
+    exiftool tunn3l_v1s10n.bmp
+        to understand the specs of the file
+    stat tunn3l_v1s10n.bmp | grep Size
+        to understand the specs of the file
+
+Understanding the header info
+    xxd -g 1 tunn3l_v1s10n.bmp | head
+        00000000: 42 4d 8e 26 2c 00 00 00 00 00 ba d0 00 00 ba d0  BM.&,...........
+        00000010: 00 00 6e 04 00 00 32 01 00 00 01 00 18 00 00 00  ..n...2.........    
+    14 bytes - Bitmap file header
+        2 bytes - 42 4d is to specify the BMP and DIB file format
+        4 bytes - The size of the BMP file in bytes. 0x2c268e = 2893454
+        4 bytes - reserved
+        4 bytes - The offset, i.e. starting address, of the byte where the bitmap image data (pixel array) can be found.
+            0x0dba is the current value which is very big
+            normally the pixel data is stored after the DIB header(may be some color table and then )
+                we can assume the DIB header is 40 bytes we can make this value 40+14 = 0x28 + 0xe = 0x36
+    40 bytes - Image information(DIB header)
+        4 bytes - header size which should be 0x28(40) instead of 0x0dba
+        ...
+        also we need to change the height(or width) of the image
+            image size is - 2893454 bytes => 2893400 / 3 =~ 964466 pixels
+            the height and width given is - 1134 * 306 = 347004
+                we have some pixels missing
+                we can change the height to 850 to get approx same level of pixels
+
+Changes
+    xxd -g 1 tunn3l_v1s10n.bmp > file_hex_dump
+    vim file_hex_dump
+    xxd -r file_hex_dump tunn3l_v1s10n_patched.bmp
+
+Final header change
+    before patch
+        00000000: 42 4d 8e 26 2c 00 00 00 00 00 ba d0 00 00 ba d0  BM.&,...........
+        00000010: 00 00 6e 04 00 00 32 01 00 00 01 00 18 00 00 00  ..n...2.........
+    after patch
+        00000000: 42 4d 8e 26 2c 00 00 00 00 00 36 00 00 00 28 00  BM.&,.....6...(.
+        00000010: 00 00 6e 04 00 00 52 03 00 00 01 00 18 00 00 00  ..n...R.........
+    
+flag - picoCTF{qu1t3_a_v13w_2020}

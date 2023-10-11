@@ -1,0 +1,6 @@
+png file is given
+    exiftool pico_img.png 
+        Artist                          : picoCTF{s0_m3ta_eb36bf44}
+
+
+flag - picoCTF{s0_m3ta_eb36bf44}

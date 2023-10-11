@@ -1,0 +1,20 @@
+    mmls ./disk.flag.img 
+              Slot      Start        End          Length       Description
+        000:  Meta      0000000000   0000000000   0000000001   Primary Table (#0)
+        001:  -------   0000000000   0000002047   0000002048   Unallocated
+        002:  000:000   0000002048   0000206847   0000204800   Linux (0x83)
+        003:  000:001   0000206848   0000411647   0000204800   Linux Swap / Solaris x86 (0x82)
+        004:  000:002   0000411648   0000819199   0000407552   Linux (0x83)
+    fls -o 0000411648 -r ./disk.flag.img  | grep flag
+        + r/r * 1876(realloc):	flag.txt
+        + r/r 1782:	flag.txt.enc
+    icat -o 0000411648 ./disk.flag.img 1782 
+        Salted__S�+%���+�O��k�ђ(A����c��
+                                        @]ԣ
+        L�ޢȤ7� ���؎$�'%   
+    icat -o 0000411648 ./disk.flag.img 1876
+        no data
+    icat -o 0000411648 ./disk.flag.img 1782 > flag.txt.enc
+    openssl aes256 -d -salt -in flag.txt.enc -out flag.txt -k unbreakablepassword1234567
+
+Flag - picoCTF{h4un71ng_p457_1d02081e}

@@ -1,0 +1,4 @@
+https://www.dreyer.dev/posts/2023_picoctf/reverse_engineering__virtual_machine/
+gear analysis who will do this
+
+Flag - picoCTF{m0r3_g34r5_3g4d_c851b08b}

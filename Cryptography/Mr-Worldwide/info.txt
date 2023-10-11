@@ -1,0 +1,4 @@
+contains locations coordinates and we have to make the flag with first letter of those places
+    the final answer is a bit diff
+    Although the output from the console is picoCTF{KODIAK_ALANKA}, the final answer is picoCTF{KODIAK_ALASKA} as mentioned above. Sleepy Hollow has a geocode of NEWCITY-LCIXI and an altgeocode of SLEEPYUS-LCIXI, however there was no clear rule when to prefer the altgeocode over the geocode, at least from a programmatic perspective.
+Flag: picoCTF{KODIAK_ALASKA}

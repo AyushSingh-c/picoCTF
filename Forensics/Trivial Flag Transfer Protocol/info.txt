@@ -1,0 +1,16 @@
+we can export the files from the TFTP transfers
+    File > Export Objects > TFTP
+
+We save these files in the export_files
+    instructions.txt file
+        we have something encoded in rot13
+        TFTP DOESNT ENCRYPT OUR TRAFFIC SO WE MUST DISGUISE OUR FLAG TRANSFER.FIGURE OUT AWAY TO HIDE THE FLAG AND I WILL CHECK BACK FOR THE PLAN
+    plan file
+        we have something encoded in rot13
+        I USED THE PROGRAM AND HID IT WITH-DUEDILIGENCE.CHECKOUT THE PHOTOS
+    we can install the program.deb file
+        it is a program called "steghide"
+    steghide extract -sf picture3.bmp -p DUEDILIGENCE   
+        this will save flag.txt file with flag
+
+flag - picoCTF{h1dd3n_1n_pLa1n_51GHT_18375919}

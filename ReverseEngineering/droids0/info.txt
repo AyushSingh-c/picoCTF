@@ -1,0 +1,3 @@
+https://mregraoncyber.com/picoctf-writeup-droids0/
+
+flag - picoCTF{a.moose.once.bit.my.sister}

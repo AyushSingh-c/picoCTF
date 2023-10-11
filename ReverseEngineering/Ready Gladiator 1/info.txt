@@ -1,0 +1,4 @@
+we can use a Dwarf warrior
+    nc saturn.picoctf.net 64753 < dwarf.red
+
+flag - picoCTF{1mp_1n_7h3_cr055h41r5_b9bb3269}

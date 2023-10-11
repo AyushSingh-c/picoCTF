@@ -1,0 +1,3 @@
+https://www.dcode.fr/monoalphabetic-substitution
+
+Flag: FREQUENCY_IS_C_OVER_LAMBDA_DNVTFRTAYU

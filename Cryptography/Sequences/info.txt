@@ -1,0 +1,4 @@
+Simple matrix exponentialtion to calculate the function - like fibonacci
+    golang we have to implement a lot of matrix related shits :(
+    in sagemath it was easy
+Flag: picoCTF{b1g_numb3rs_3956e6c2}

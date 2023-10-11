@@ -1,0 +1,3 @@
+add the two image picel by pixel to get the new image
+
+Flag: picoCTF{d72ea4af}

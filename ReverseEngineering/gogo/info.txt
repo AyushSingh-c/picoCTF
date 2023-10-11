@@ -1,0 +1,10 @@
+we need to look into the ghidra decompiles executable
+    we have two values in main.checkpassword() st
+        value1 ^ password == value2
+    we will make the password 
+        now we will we asked unhashed key
+        861836f13e3d627dfa375bdb8389214e
+            echo -n "goldfish" | md5sum
+
+flag - picoCTF{p1kap1ka_p1c0b187f1db}
+        

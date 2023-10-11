@@ -1,0 +1,36 @@
+understanding func1
+    sp <- sp-32
+    w0 -> sp+12
+    wzr -> sp+24(storing 0 in this address)
+    wzr -> sp+28(storing 0 in this address)
+    branch to L2
+        w1 <- sp+28(initially 0) <------------
+        w0 <- sp+12(init_w0)                 |
+        if w1<w0 branch L3                   |
+            w0 <- sp+24                      |
+            w0 <- w0+3                       |
+            w0 -> sp+24(init_w0+3)           |
+            w0 <- sp+28(0)                   |
+            w0 <- w0+1(1)                    |
+            w0 -> sp+28(1)                   |
+            goto line 7 ----------------------
+        w0 <- sp+24
+        sp <- sp+32
+        return
+    The final code is 
+        i = 0
+        j = 0
+        while (i < argument):
+            j += 3
+            i += 1
+
+understanding main
+    mainly it is getting the second argument from the main argument list and converting to int and save it to w0 and call func1
+    then it will call printf
+
+Final flag - picoCTF{9c174346}
+    actually the final answer is 3736234946*3 = 11208704838(0x29c174346) but we need to only 32 bits in answer
+
+
+we can also compile the assembly with
+    aarch64-linux-gnu-gcc -static -o chall_2 chall_2.S

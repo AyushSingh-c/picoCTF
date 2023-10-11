@@ -1,0 +1,5 @@
+we have a susbtitution cipher with a word list. We can do frequency analysis with subbreaker
+    subbreaker break --lang EN --ciphertext <(cat study-guide.txt | head -n 100)
+    subbreaker decode --key xunmrydfwhglstibjcavopezqk --ciphertext flag.txt
+
+Flag: picoCTF{perhaps_the_dog_jumped_over_was_just_tired}

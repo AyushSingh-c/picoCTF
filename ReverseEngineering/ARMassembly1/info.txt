@@ -1,0 +1,37 @@
+understanding func
+        sp <- sp-32
+        w0 -> sp+12
+        87 -> sp+16
+        3 -> sp+20
+        3 ->  sp+24
+        w0 <- 3 (sp+20)
+        w1 <- 87 (sp+16)
+        w0 <- w1*8(=696)
+        w0(696) -> sp+28
+        w1 <- 696(sp+28)
+        w0 <- 3(sp+24)
+        w0 <- w1/3(232)
+        w0(232) -> sp+28
+        w1 <- 232(sp+28)
+        w0 <- sp+12(initial w0 - init_w0)
+        w0 <- w1-w0 (232 - init_w0)
+        w0 -> sp+28
+        w0 <- sp+28
+        sp <- sp+32
+    in the end you are returning 232-w0 
+
+understanding main
+    make space of 48 bytes in stack and storing prev x29 and x30 registers and updating x30 register to new sp
+    w0 -> sp+28
+    x1 -> sp+16
+    x0 <- sp+16(x1)
+    x0 <- x0+8
+    x0 <- value stored at x0 register value address
+    w0 <- int(x0)
+    w0 -> sp+44
+    w0 <- sp+44
+    call func
+    to get the win we need to have w0 == 0 otherwise lose statement will be printed
+    This means we need to make w0 232
+
+Flag - picoCTF{000000e8}

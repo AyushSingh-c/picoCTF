@@ -1,0 +1,4 @@
+there is a sleep call in the main function when analysed by ghidra
+we need to skip this call with gdb and then the flag is printed
+
+Flag - picoCTF{d3bugg3r_dr1v3_197c378a}

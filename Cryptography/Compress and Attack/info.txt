@@ -1,0 +1,3 @@
+compress a repetitive string will give smaller string as output
+
+Flag: picoCTF{sheriff_you_solved_the_crime}

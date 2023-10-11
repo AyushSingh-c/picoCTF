@@ -1,0 +1,10 @@
+we have a disk image file
+    sudo ./mount.sh
+    ls mnt
+    ls mnt/loop3p2
+    sudo ls -al mnt/loop3p2/root/.ssh
+    sudo cp ./mnt/loop3p2/root/.ssh/id_ed25519 ./
+    sudo ssh -i id_ed25519 -p 54843 ctf-player@saturn.picoctf.net
+        ls
+        cat flag.txt
+Flag - picoCTF{k3y_5l3u7h_339601ed}

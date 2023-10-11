@@ -1,0 +1,27 @@
+we get a packet snapshot 
+    we can get this conversation from the TCP connection between 10.0.0.4 and 10.0.0.15
+        Hey, how do you decrypt this file again?
+        You're serious?
+        Yeah, I'm serious
+        *sigh* openssl des3 -d -salt -in file.des3 -out file.txt -k supersecretpassword123
+        Ok, great, thanks.
+        Let's use Discord next time, it's more secure.
+        C'mon, no one knows we use this program like this!
+        Whatever.
+        Hey.
+        Yeah?
+        Could you transfer the file to me again?
+        Oh great. Ok, over 9002?
+        Yeah, listening.
+        Sent it
+        Got it.
+        You're unbelievable
+    between the packets "Yeah, listening." and "Sent it" we would have the file.desc3 file
+        0000   53 61 6c 74 65 64 5f 5f 3e 35 0b 37 56 1c fa 7b
+        0010   57 b7 e8 45 f4 6e f0 66 32 8e 64 07 af 7a 6a 6a
+        0020   ce 5b d1 a3 2b e1 40 0f 4a 94 f5 b2 f6 74 d2 51
+    xxd -r ./hex_dump_file ./file.des3
+    xxd -g 1 ./file.des3 | head
+    openssl des3 -d -salt -in file.des3 -out file.txt -k supersecretpassword123
+
+Flag - picoCTF{nc_73115_411_0ee7267a}

@@ -1,0 +1,9 @@
+gcc -g chall.S -o chall
+    to analyse the binary
+
+ghidra analysis
+    in gdb 
+        b *main+385
+        r
+        arg[1] to memcmp is the flag
+    flag - picoCTF{dyn4m1c_4n4ly1s_1s_5up3r_us3ful_17e4690d}

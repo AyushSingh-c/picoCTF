@@ -1,0 +1,4 @@
+An audio file is given
+    By using scripy.io we are able to read the WAV file in and collect all the amplitudes. If we check those value we can see they all lie within printable ASCII hex code. Thus, by converting all the unique points/peaks, we are able to recover the flag.
+
+flag - picoCTF{mU21C_1s_1337_6e0a8181}

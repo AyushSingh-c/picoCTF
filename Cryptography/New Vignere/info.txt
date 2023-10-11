@@ -1,0 +1,6 @@
+Kasiski examination to find the key length - 9 
+    online tool - https://planetcalc.com/8550/
+Find possible key values such that the unshift will keep the flag values in the accepted chars list
+    abcdef0123456789
+
+Flag: picoCTF{73885da7b4e46e4d01ee934278716e68}

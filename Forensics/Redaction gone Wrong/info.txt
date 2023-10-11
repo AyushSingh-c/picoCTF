@@ -1,0 +1,8 @@
+we can just select the text
+
+OR
+
+pdftotext ${pdf}.pdf
+grep -o "picoCTF{.*}" ${pdf}.txt
+
+Flag - picoCTF{C4n_Y0u_S33_m3_fully}

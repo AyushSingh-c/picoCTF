@@ -1,0 +1,5 @@
+a = 0x4
+b = 0x2d
+
+b += ((0x5fa1-a)//0xd1) + 1
+print(hex(b))

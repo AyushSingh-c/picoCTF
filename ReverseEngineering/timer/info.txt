@@ -1,0 +1,6 @@
+apktool -d ./timer.apk
+    to decomp apk timer.apk
+grep -rw picoCTF .
+    to get picoCTF
+
+flag: picoCTF{t1m3r_r3v3rs3d_succ355fully_17496}

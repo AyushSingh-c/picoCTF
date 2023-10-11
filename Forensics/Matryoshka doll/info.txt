@@ -1,0 +1,7 @@
+we need to extract the imgs 
+    binwalk -e ./dolls.jpg 
+    binwalk -e ./_dolls.jpg.extracted/base_images/2_c.jpg
+    binwalk -e ./_dolls.jpg.extracted/base_images/_2_c.jpg.extracted/base_images/3_c.jpg
+    binwalk -e ./_dolls.jpg.extracted/base_images/_2_c.jpg.extracted/base_images/_3_c.jpg.extracted/base_images/4_c.jpg
+    
+flag - picoCTF{4f11048e83ffc7d342a15bd2309b47de}

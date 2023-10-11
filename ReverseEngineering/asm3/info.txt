@@ -1,0 +1,16 @@
+Analysis
+    EAX is the full 32-bit value
+    AX is the lower 16-bits
+    AL is the lower 8 bits
+    AH is the bits 8 through 15 (zero-based), the top half of AX
+
+we can also run asm codes 
+    https://github.com/Dvd848/CTFs/blob/master/2019_picoCTF/asm3.md
+
+commands to run asm file
+    gcc -masm=intel -m32 -c input.S -o input.o
+    gcc -m32 -c main.c -o main.o
+    gcc -m32 input.o main.o -o main
+    ./main
+
+flag - 0xc36b

@@ -1,0 +1,6 @@
+Info from image
+    steghide extract -sf ./atbash.jpg
+        no password
+    extracted message is - krxlXGU{zgyzhs_xizxp_zx751vx6}
+    this is atbash cipher - decode online
+Flag: picoCTF{atbash_crack_ac751ec6}

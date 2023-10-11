@@ -1,0 +1,3 @@
+Wiener attack assuming small d
+
+flag: picoCTF{proving_wiener_8652838}

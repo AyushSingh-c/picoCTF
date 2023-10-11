@@ -1,0 +1,1 @@
+Use a website like this "https://morsecode.world/international/decoder/audio-decoder-adaptive.html" morse code decoder. Upload the file. The output was WH47 H47H 90D W20U9H7. We replace the spaces with underscores to get the flag.

@@ -1,0 +1,3 @@
+binary string in given in weird format
+
+Flag - picoCTF{not_all_spaces_are_created_equal_3e2423081df9adab2a9d96afda4cfad6}

@@ -1,0 +1,5 @@
+find pico string
+    on udp stream we have the flag
+        udp.stream eq 6     
+
+flag - picoCTF{StaT31355_636f6e6e}

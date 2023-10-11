@@ -1,0 +1,3 @@
+uses this https://www.alpertron.com.ar/ECM.HTM to find factors
+
+Flag: picoCTF{too_many_fact0rs_0731311}

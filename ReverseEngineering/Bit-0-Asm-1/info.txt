@@ -1,0 +1,3 @@
+simply 0x30(48) is moved to eax register
+
+flag - picoCTF{48}

@@ -1,0 +1,6 @@
+we have a key and a packet snapshot
+    we need to include the key in the TLS connection
+        Edit > Preferences > Protocols > TLS > RSA keys list
+    we can go to 34 no. Frame and look into the flag
+
+flag - picoCTF{nongshim.shrimp.crackers}

@@ -1,0 +1,10 @@
+we can look into the radare tool
+    aaaa
+        to analyse
+    izz
+        to analyse the strings
+    make sure the alignment of the terminal is such that we can read the chars in the maze
+
+https://picoctf2022.haydenhousen.com/reverse-engineering/wizardlike
+
+flag - picoCTF{ur_4_w1z4rd_1496299E}

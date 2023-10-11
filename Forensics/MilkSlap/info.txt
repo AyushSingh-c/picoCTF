@@ -1,0 +1,5 @@
+look into the /style.css with ctrl + shift + i
+    download the png file
+zsteg concat_v.png
+
+flag - picoCTF{imag3_m4n1pul4t10n_sl4p5}

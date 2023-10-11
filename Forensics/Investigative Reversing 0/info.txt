@@ -1,0 +1,4 @@
+a binary and an image is given 
+    when we investigate the binary the flag is getting appended in the image in the last with a bit encoding
+
+Flag - picoCTF{f0und_1t_d1deedaa}

@@ -1,0 +1,20 @@
+What is input.txt
+    number of lines should be <= 5
+    the length of total chars(including newlines) == 264*35 + 5
+    the only chars allowed are "1","0","/n","/r"," "
+    each line contains only 6 chars separated by " "
+
+Analysis
+    $block contains all the sets of 6 chars column indexed
+    it represents a matrix of binary strings of length 6 with 264 columns and 5 rows
+        $block[$i] represents ith column
+    for each column we map to a binary string of length 60 with the help of $seed value
+        every single char in the original byte string refer to 2 chars in new one
+    the output file contains modified numbers from this bute strings(total 264)
+        output[i] = output[i-1]^some_random_number_list[i]^modified_number_list[i]
+
+we can get the input number 
+    After getting the right input.txt, we notice that in each line, there are only 2 combinations of numbers, and hence we can deduce it is binary. By replacing the combinations with 0/1s, we get the flag:
+
+Flag - picoCTF{2018highw@y_2_pow3r$hel!}
+

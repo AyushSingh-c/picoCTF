@@ -1,0 +1,19 @@
+we have 4 audio files
+    we need to convert the clues files to images
+        pactl load-module module-null-sink sink_name=virtual-cable
+            536870913
+        pavucontrol # A GUI will pop-up, go to the "Output Devices" tab to verify that you have the "virtual-cable" device
+        qsstv # The program GUI will pop-up, go to "Options" -> "Configuration" -> "Sound" and select the "PulseAudio" Audio Interface
+        # Back in the pavucontrol GUI, select the "Recording" tab and specify that QSSTV should capture audio from the Null Output
+        paplay -d virtual-cable clue1.wav
+        pactl list short modules | grep null
+        pactl unload-module 536870913
+    clue 1 - Password is hidden_stegosaurus
+    clue 2 - The quieter you are more you HEAR
+    clue 3 - Alan Eliasen the Future Boy
+    when we search the clue3 we get a hint about the steghide program
+    
+    steghide extract -sf message.wav -p hidden_stegosaurus
+    cat steganopayload12154.txt
+
+flag - picoCTF{the_answer_lies_hidden_in_plain_sight}

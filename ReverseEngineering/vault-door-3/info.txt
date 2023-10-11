@@ -1,0 +1,3 @@
+flag is jumbled password jU5t_a_sna_3lpm18g947_u_4_m9r54f
+
+flag - picoCTF{jU5t_a_s1mpl3_an4gr4m_4_u_79958f}

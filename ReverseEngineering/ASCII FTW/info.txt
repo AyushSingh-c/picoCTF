@@ -1,0 +1,4 @@
+we have the flag stored as hex values in the main program
+    we will store the disassembled instructions in input.txt and make the flag in solution.py
+
+flag - picoCTF{ASCII_IS_EASY_8960F0AF}

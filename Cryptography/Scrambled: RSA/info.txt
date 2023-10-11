@@ -1,0 +1,9 @@
+SOLUTION    
+    Create a string known of known characters.
+    Ask to encrypt 'p', verify that E1('p') is in E1(flag), and append 'p' to known.
+    Loop over all printable characters, and for each printable character c, ask to encrypt known + c.
+    Extract (some value related to) E1(c) from the ciphertext and check if that value is in E1(flag).
+    If it is, break out out of the loop and append c to known. If c happens to be '}', print known and exit; Otherwise go to step 2.
+    If it isn't, continue to the next character.
+
+Flag:  picoCTF{bad_1d3a5_5700361}

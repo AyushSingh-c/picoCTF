@@ -1,0 +1,11 @@
+Simple 2-DES vuln
+    the complexity is not (key-length)^2 but key-length
+    we will generate a plaintext(P) and encryption(E) pair
+    we will iterate through all possible keys
+        make all possible encryption T1 = DES_ENC(P,Ki)
+        make all possible decryption T2 = DES_DEC(E,Ki)
+    we will compare all T1 and T2 and take Ki where Ts are equal
+    Now we will use these keys to decrypt flag
+    Final complexity - key-length (10^6)
+
+Flag: e21cf83f64e53a743e685e55852feaf2

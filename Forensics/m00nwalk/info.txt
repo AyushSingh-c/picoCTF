@@ -1,0 +1,12 @@
+An audio file is given
+    This tutorial explains how to use a program called qsstv to convert the audio files back to images.
+        pactl load-module module-null-sink sink_name=virtual-cable
+            536870913
+        pavucontrol # A GUI will pop-up, go to the "Output Devices" tab to verify that you have the "virtual-cable" device
+        qsstv # The program GUI will pop-up, go to "Options" -> "Configuration" -> "Sound" and select the "PulseAudio" Audio Interface
+        # Back in the pavucontrol GUI, select the "Recording" tab and specify that QSSTV should capture audio from the Null Output
+        paplay -d virtual-cable message.wav
+        pactl list short modules | grep null
+        pactl unload-module 536870913
+
+flag - picoCTF{beep_boop_im_in_space}

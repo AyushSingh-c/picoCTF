@@ -1,0 +1,4 @@
+we find an ip 173.249.33.206
+    whois 173.249.33.206
+
+flag - picoCTF{WilhelmZwalina}

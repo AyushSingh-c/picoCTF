@@ -1,0 +1,5 @@
+we have a packet capture file
+    “Random” source ports with destination port 22.
+    We can see that the second message originates from source port 5112. 112 is a number which should alert us, since its ASCII representation is p, which matches the flag template.
+
+flag - picoCTF{p1LLf3r3d_data_v1a_st3g0}

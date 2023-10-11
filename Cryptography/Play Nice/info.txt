@@ -1,0 +1,5 @@
+playfair cipher
+    decoded with https://www.dcode.fr/playfair-cipher
+    given key an d encryption we need to give message
+
+Flag: f391b621282ef5063ab2de93ab9e4bff

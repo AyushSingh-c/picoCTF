@@ -1,0 +1,6 @@
+we need to unpack the binary
+    upx -d ./unpackme-upx
+we can look into ghidra 
+    in the m/main function we see there is a comparision - 0xb83cb(754635)
+
+Flag - picoCTF{up><_m3_f7w_e510a27f}

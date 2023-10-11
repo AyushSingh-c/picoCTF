@@ -1,0 +1,7 @@
+given a binary and an encoded image we need to find the flag hidden in the image
+    in the binary 
+        we are reading the flag byte by byte  
+        for every bit in the byte we are taking an AND with 1 and storing it in the last bit of the encoded image from an ofset 2000
+        we are also substracting 5 for some reason 
+
+Flag - picoCTF{n3xt_0n30000000000000000000000000899f0192}

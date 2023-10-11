@@ -1,0 +1,10 @@
+we have a packet list
+    the password is from the rock-you list
+        find ./ -name rockyou*
+            ~/Work/SecLists/Passwords/Leaked-Databases/rockyou-*.txt
+            /usr/share/wordlists/rockyou.txt
+    aircrack-ng -w /usr/share/wordlists/rockyou.txt wpa-ing_out.pcap
+        KEY FOUND! [ mickeymouse ]
+
+flag - picoCTF{mickeymouse}
+    

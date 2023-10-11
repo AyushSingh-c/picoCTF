@@ -1,0 +1,3 @@
+A file with multiple tar compression
+
+Flag - picoCTF{l0t5_0f_TAR5}

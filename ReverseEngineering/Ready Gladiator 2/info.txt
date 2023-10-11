@@ -1,0 +1,6 @@
+Hmm… What if we control the target address of the “Imp” opponent MOV instruction after it has been copied over?
+
+That being said, can we use the JMP instruction to jump back behind so that “Imp” can’t move forward, which will then kills the “Imp”??
+
+
+flag - picoCTF{d3m0n_3xpung3r_99033c22}

@@ -1,0 +1,13 @@
+This is weird 
+    we are taking an input string in the executable and taking xors and permutate this string and compare it to a password string stored in &DAT_00012008
+    we need to sent a perfect string(which is the flag) to get the correct verdict
+
+    we can do this by adding chars one by one in the flag and checking on the correct condition if it is met or not 
+        if the condition is met then the added char is correct
+        ot it is not
+    Now the problem is we are permuting the flag so the ith value in flag may not be responsible for ith value of password
+
+To run the python code with gdb module
+    gdb ./{executable} -x ./{python_file}
+
+flag - picoCTF{I_5D3_A11DA7_61b3a698}

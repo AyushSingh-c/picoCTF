@@ -1,0 +1,4 @@
+Pollard p-1 algo to find factors
+    After investigating the overall code, it will generate primes p,q which p-1 and q-1 are both 16bit and 17bit smooth numbers which means all of the p-1 factors are less than 2**16 or 65536 and all of the q-1 factors are less than 2**17 or 131072
+
+Flag: picoCTF{p0ll4rd_f4ct0r1z4at10n_FTW_148cbc0f}

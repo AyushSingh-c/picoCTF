@@ -1,0 +1,7 @@
+we need to use blender to look into the design
+    we see 40 spikes in red and 8 spikes in blue
+    this means if red is rotated n times blue will be rotated 5*n times
+
+we need to convert the int(input*5) to string of ASCII chars
+
+Flag - picoCTF{g34r5_0f_m0r3_44af15eb}

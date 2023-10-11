@@ -1,0 +1,3 @@
+we are converting int to bytes to string
+
+flag - picoCTF{A_b1t_0f_b1t_sh1fTiNg_dc80e28124}

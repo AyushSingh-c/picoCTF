@@ -1,0 +1,5 @@
+run the python file with 
+    ak98-=90adfjhgj321sleuth9000
+    as argument
+
+flag - picoCTF{p47ch1ng_l1f3_h4ck_f01eabfa}

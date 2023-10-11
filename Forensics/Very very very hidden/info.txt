@@ -1,0 +1,9 @@
+We have a packet capture file
+    we can export the files send over network
+    we get two png files from HTTP protocol
+        evil_duck.png
+        duck.png
+    we can extract the powershell script from the evil_duck.png file
+    
+
+flag - picoCTF{n1c3_job_f1nd1ng_th3_s3cr3t_in_the_im@g3}

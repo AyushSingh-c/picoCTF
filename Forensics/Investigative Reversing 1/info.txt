@@ -1,0 +1,29 @@
+Given a binary and  3 encoded image
+    Encoding
+        Append byte 1 to file 3
+        Add 0x15 to byte 0 and append to file 2
+        Append byte 2 to file 3
+        Append byte 5 to file 3. At the top of the file the variables are listed like so:
+        char local_38 [4]; // 4 is length
+        char local_34;
+        char local_33;
+        This means that local_34 will contain the 4th character from flag and local_33 will contain the 5th. So in the below lines the 5th bytes is added then the 4th.
+        fputc((int)local_33,__stream_02);
+        fputc((int)local_34,__stream_00);
+        Append byte 4 to file 1
+        Append bytes 6 to 9 (inclusive) to file 1
+        Append byte 3 (which has been increased by 4 during the above loop) to file 2
+        Append bytes 10 to 14 (inclusive) to file 3
+        Append bytes 15 to 25 (inclusive) to file 1
+    we need some tail bytes from the files
+        mystery.png - 16 bytes
+            xxd -g 1 mystery.png | tail
+                43467b416e315f36393030386237357d 
+        mystery2.png - 2 bytes
+            xxd -g 1 mystery2.png | tail
+                8573
+        mystery3.png - 8 bytes
+            xxd -g 1 mystery3.png | tail
+                696354307468615f 
+
+Flag - picoCTF{An0tha_1_69008b75}

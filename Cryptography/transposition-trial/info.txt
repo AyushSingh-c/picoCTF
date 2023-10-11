@@ -1,0 +1,3 @@
+divide the message in three chars at a time and permute the chars with opne shift to the right
+
+Flag: picoCTF{7R4N5P051N6_15_3XP3N51V3_56E6924A}

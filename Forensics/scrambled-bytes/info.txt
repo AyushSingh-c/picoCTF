@@ -1,0 +1,38 @@
+analysis of send.py 
+    we are sending UDP packets with length of 1 byte
+    the ip for source and destination is fixed
+    the port for the source is random and for the destination is fixed
+    The bytes we are sending are jumbled flag XORed with random numbers
+        random with time seed
+        shuffle flag with this random
+        for every byte "b" in shuffled flag 
+            generate source port 
+                random.randrange(65536)
+            generate payload
+                b^random.randrange(256)
+
+Recon
+    ip dest - 172.17.0.3
+    ip source - 172.17.0.2
+    port source - ?
+    port dest - 56742
+    finding the first packets
+        tshark -r ./capture.pcapng -Y "udp && data.len==1" | head -n 1
+            1921 3.514431477   172.17.0.2 → 172.17.0.3   UDP 43 45829 → 56742 Len=1
+        tshark -r ./capture.pcapng -Y "frame.number == 1921" -V -t e
+            Arrival Time: Feb 23, 2021 07:14:10.913789387 IST
+            [Time shift for this packet: 0.000000000 seconds]
+            Epoch Time: 1614044650.913789387 seconds
+    the seed for python random (something <= 1614044650)
+
+Solution
+    we need to find the time value for the seed
+    we need to get all the bytes send chronologically
+    we need to reverse the randomness
+    file output.bin
+        output.bin: PNG image data, 426 x 240, 1-bit grayscale, non-interlaced
+    mv ./output.bin ./output.png 
+        the png file will have the flag
+    
+flag - picoCTF{n0_t1m3_t0_w4st3_5hufflin9_ar0und}
+

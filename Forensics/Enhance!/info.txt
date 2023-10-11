@@ -1,0 +1,5 @@
+svg file is given
+    strings ./drawing.flag.svg
+    we see "{ 3 n h 4 n" and "c 3 d _ 6 7 8 3 c c 4 6 }"
+
+flag - picoCTF{3nh4nc3d_24374675}

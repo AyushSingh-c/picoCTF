@@ -1,0 +1,5 @@
+simple message-key
+    message: UFJKXQZQUNB
+    key: SOLVECRYPTO
+
+Flag: picoCTF{CRYPTOISFUN}

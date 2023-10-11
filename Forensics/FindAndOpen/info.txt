@@ -1,0 +1,12 @@
+The packet file is given
+    There is a packet no. 48 with data
+        Data: 564768706379427063794230614755676332566a636d56304f69427761574e76513152476531497a4e45524a546b64665445394c5a46383d
+        with hex to ascii
+            VGhpcyBpcyB0aGUgc2VjcmV0OiBwaWNvQ1RGe1IzNERJTkdfTE9LZF8=
+        with base64 decoder
+            picoCTF{R34DING_LOKd_
+
+The password for flag
+    picoCTF{R34DING_LOKd_
+
+Flag - picoCTF{R34DING_LOKd_fil56_succ3ss_5ed3a878}

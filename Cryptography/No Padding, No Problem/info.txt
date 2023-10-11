@@ -1,0 +1,7 @@
+Multiple decryption oracle for RSA is given
+    we have n, e, c values
+    we need encrypt 2 -> c2
+    decryption(c2*c) = flag*2
+        as RSA(m1*m2)=RSA(m1)*RSA(m2) mod n
+
+Flag: picoCTF{m4yb3_Th0se_m3s54g3s_4r3_difurrent_3279013}

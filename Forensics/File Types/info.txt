@@ -1,0 +1,37 @@
+We get a pdf file
+    file ./Flag.pdf
+        file is shell archive text file
+    we need to execute it
+        chmod +x ./Flag.pdf
+        ./Flag.pdf
+            we get a file "flag"
+    file flag
+        it is a current ar archive file
+    we extract it
+        ar xv flag
+    file ./flag
+        cpio archive file
+    binwalk -e flag
+    file _flag.extracted 
+    file 64 
+        gzip file
+    binwalk -e 64
+    cd _64.extracted
+    lzip -d -k flag
+    lz4 -d flag.out flag2.out
+    mv ./flag2.out ./flag2.lzma
+    lzma -d -k flag2.lzma 
+    file flag2
+    mv ./flag2 ./flag2.lzop 
+    lzop -d -k flag2.lzop -o flag3
+    file flag3
+    lzip -d -k flag3
+    file flag3.out
+    mv ./flag3.out ./flag4.xz
+    xz -d -k flag4.xz
+    cat flag4
+        7069636f4354467b66316c656e406d335f6d406e3170756c407431306e5f
+        6630725f3062326375723137795f33633739633562617d0a
+
+
+flag - picoCTF{f1len@m3_m@n1pul@t10n_f0r_0b2cur17y_3c79c5ba}

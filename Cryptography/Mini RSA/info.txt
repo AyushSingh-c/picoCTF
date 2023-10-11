@@ -1,0 +1,3 @@
+simply iterate on i st (i*n+c)^1/e is the ciphertext
+
+flag: picoCTF{e_sh0u1d_b3_lArg3r_0b39bbb1}

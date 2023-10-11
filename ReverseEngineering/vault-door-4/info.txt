@@ -1,0 +1,5 @@
+get the checking byte sequence as string
+    String str = new String(myBytes);
+        System.out.println(str);
+
+flag - picoCTF{jU5t_4_bUnCh_0f_bYt3s_8f4a6cbf3b}

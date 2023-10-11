@@ -1,0 +1,2 @@
+flag - picoCTF{cu7_7h3_bl047_695036e3}
+the input number is compared with 549255 and if equal the flag will be printed

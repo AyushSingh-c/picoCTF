@@ -1,0 +1,14 @@
+Analysis
+    in the main function
+        piVar1 = (int *)mmap((void *)0x0,4,3,0x21,-1,0);
+        *piVar1 = 1000000000;
+        fork();
+        fork();
+        fork();
+        fork();
+        *piVar1 = *piVar1 + 0x499602d2;
+    we are forking this process 4 times so the last value to be passed to doNothing function
+        python -c "from numpy import int32;print(int32(1000000000) + int32(16)*int32(0x499602d2))"
+        this is -721750240
+
+flag - picoCTF{-721750240}

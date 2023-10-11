@@ -1,0 +1,4 @@
+Given a CSR cert decode its information
+    openssl req -in readmycert.csr -noout -text 
+    
+Flag: picoCTF{read_mycert_57f58832}

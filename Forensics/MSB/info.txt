@@ -1,0 +1,5 @@
+Image file is given
+    The description and name of challenge suggests data may be hidden in the Most Significant Bit (MSB) of the RGB pixels values within the image.
+    wget https://raw.githubusercontent.com/Pulho/sigBits/master/sigBits.py
+    python3 sigBits.py -t=msb Ninja-and-Prince-Genji-Ukiyoe-Utagawa-Kunisada.flag.png
+Flag - picoCTF{15_y0ur_que57_qu1x071c_0r_h3r01c_572ad5fe}

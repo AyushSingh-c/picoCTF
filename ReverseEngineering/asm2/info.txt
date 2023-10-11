@@ -1,0 +1,11 @@
+Analysis
+    we are storing the arg1 in [$ebp - 0x8] and arg2 in [$ebp - 0x4]
+    while arg1 <= 0x5fa1
+        arg2 += 0x1
+        arg1 += 0xd1
+    eax <- arg2
+    ret
+
+arguments  - 0x4, 0x2d
+
+flag - 0xa3

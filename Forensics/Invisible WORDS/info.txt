@@ -1,0 +1,7 @@
+we have png file
+    xxd -g 1 output.bmp | head
+        Immediately what jumped out at me are the two characters ‘PK’ in the decoded text. ‘PK’ encoded into hex is \x50\x4b, which are the first 2 bytes of each signature used to denote different structures within a PKZip archive. The first signature of a PKZip archive should be \x50\x4b\x03\x04 (local file header signature) so the next 2 bytes after \x50\x4b in our hex dump should be \x03\x04.
+    we can pick up the bytes (2 pick 2 loose) and make a new file
+        this will be a zip file we can extract to find  a text file with flag
+
+Flag - picoCTF{w0rd_d4wg_y0u_f0und_5h3113ys_m4573rp13c3_a11dd85d}

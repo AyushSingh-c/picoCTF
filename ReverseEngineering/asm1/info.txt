@@ -1,0 +1,18 @@
+Analysis
+    arg1 is stored in [ebp+0x8]
+    if arg1 > 0x3fb
+        if arg1 == 0x559
+            eax = arg1-0xa
+            ret
+        else
+            eax = arg1 + 0xa
+            ret
+    else
+        if arg1 == 0x280
+            eax = arg1 + 0xa
+            ret
+        else
+            eax = arg1-0xa
+            ret
+
+flag - 0x2e0 - 0xa = 0x2d6

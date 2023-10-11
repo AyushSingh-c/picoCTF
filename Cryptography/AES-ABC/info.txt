@@ -1,0 +1,4 @@
+the cipher is simple to convert to ecb mode 
+    python2 will run the script
+
+Flag: picoCTF{d0Nt_r0ll_yoUr_0wN_aES}
